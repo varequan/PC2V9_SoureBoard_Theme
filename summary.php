@@ -82,9 +82,7 @@
 	#legendouter{float: right;}
 	#header{height: 81px;}
  </style>
- 
-<?php
-	<div id='legendouter'>
+ <div id='legendouter'>
 		<table id='tablelegend'>
 			<tbody>
 				<tr>
@@ -96,6 +94,7 @@
 			</tbody>
 		</table>
 	</div>
+<?php
 	if(isset($_GET["url"]))	$url = $_GET["url"];
 	else $url = "./summary.html";
 	$freeze = 0;
@@ -191,6 +190,5 @@
 		}else echo '<meta http-equiv="refresh" content="0" />';
 		fclose($file_handle);
 	}else echo '<meta http-equiv="refresh" content="0" />';
-	echo base64_decode("PGRpdiBpZD0nY29weXJpZ2h0Jz5UaGVtZSBieSA8YSBocmVmPSdodHRwOi8vd3d3LmltcXJ3LmNvbSc+5YWo55Ge5paHPC9hPixDb3B5cmlnaHQgUmVzZXJ2ZWQ8L2Rpdj4=");
-	
+	echo "Theme by:<a href='http://www.imqrw.com'>VareQuan</a>";
 ?>
